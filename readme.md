@@ -32,4 +32,4 @@ Generelle regler for foldning.
 
 Hvis samme fortegn giver det en udglatning
 
-Hvis modsta fotegn giver det en tydeligere kant.
+Hvis modsat fotegn giver det en tydeligere kant.
