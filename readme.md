@@ -1,6 +1,10 @@
 # Billedbehandling med p5js
+Samling af js programmer til undervisningsbrug i billedmanipulation eller billedbehandling. Programmerne kan køres gennem index.html filen ved at henvise til den rigtige js fil.
 
-## colorFIlterManuel
+Filerne er lavet med js biblioteket P5.js.
+
+
+## colorFilterManuel
 fill((c[0]+c[1]+c[2])/3);
 
 undersøg hvad c indeholder
@@ -22,7 +26,9 @@ Undersøg hvad koden gør
 Undersøg hvad er sker hvis man bytter om på for sætningerne så man generere billedet lodret i stedet for vandret. (byt om på linje 22 og 23).
 
 ## Billedbehandling i GIMP
-I GIMP vælg: Filters -> Generic -> convolution matrix. Generelle regler for foldning.
+I GIMP vælg: Filters -> Generic -> convolution matrix.
+
+Generelle regler for foldning.
 
 Hvis samme fortegn giver det en udglatning
 
