@@ -1,3 +1,4 @@
+# Billedbehandling med p5js
 
 ## colorFIlterManuel
 fill((c[0]+c[1]+c[2])/3);
@@ -5,8 +6,6 @@ fill((c[0]+c[1]+c[2])/3);
 undersøg hvad c indeholder
 undersøg hvordan billedet ser ud med c[i], i=0,1,2
 Hvordan laver man et farvefilter?
-
-
 
 ## Gradient farvefilter
 fill((c[0]+c[1]+c[2])/(3)-j);
