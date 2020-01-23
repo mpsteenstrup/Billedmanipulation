@@ -1,5 +1,5 @@
 # Billedbehandling med p5js
-
+Hvorfor virker det ikke?
 ## colorFIlterManuel
 fill((c[0]+c[1]+c[2])/3);
 
