@@ -21,7 +21,7 @@ function pixelate(){
   for (let i=0;i<w; i = i+pixelSize){
     for (let j=0;j<h; j = j+pixelSize){
       let c = img.get(i,j);
-      fill((c[0]+c[1]+c[2])/3);
+      fill(c[1]-c[2]);
       noStroke();
       rect(i,j,1,1);
     }
