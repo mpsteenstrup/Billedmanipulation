@@ -12,8 +12,6 @@ CTRL+ALT+q -> quit liveserver
 
 CTRL+ALT+l -> aktiver liveserver
 
-
-
 # opgaver til nogle af programmerne
 
 ## colorFilterManuel
