@@ -11,12 +11,12 @@ function setup() {
 }
 
 function draw() {
-  pixelate();
+  ownFilter();
   image(img, w, 0);
   noLoop();
 }
 
-function pixelate() {
+function ownFilter() {
   for (let i = 0; i < w; i = i+1) {
     for (let j = 0; j < h; j = j+1){
       let c = img.get(i, j);

@@ -12,15 +12,14 @@ function setup() {
 }
 
 function draw() {
-  pixelate();
+  ownFilter();
   image(img, w, 0);
   noLoop();
 }
 
-function pixelate() {
-  let pixelSize = 1;
-  for (let i = 0; i < w; i = i + pixelSize) {
-    for (let j = 0; j < h; j = j + pixelSize) {
+function ownFilter() {
+  for (let i = 0; i < w; i += 1) {
+    for (let j = 0; j < h; j += 1) {
       let c = img.get(i, j);
       fill((c[0] + c[1] + c[2]) - (cMinus[0] + cMinus[1] + cMinus[2]));
       noStroke();

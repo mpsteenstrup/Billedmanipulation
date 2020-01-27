@@ -1,6 +1,5 @@
 let img;
-let cMinus = [0, 0, 0];
-
+let farve = [0,0,0];
 function preload() {
   img = loadImage('mps.jpg');
 }
@@ -12,20 +11,23 @@ function setup() {
 }
 
 function draw() {
-  pixelate();
+  ownFilter();
   image(img, w, 0);
   noLoop();
 }
 
-function pixelate() {
-  let pixelSize = 1;
-  for (let i = 0; i < w; i = i + pixelSize) {
-    for (let j = 0; j < h; j = j + pixelSize) {
-      let c = img.get(i, j);
-      fill(((c[0] + c[1] + c[2]) + (cMinus[0] + cMinus[1] + cMinus[2]))/4);
+function ownFilter() {
+  for (let i = 0; i < w; i += 1) {
+    for (let j = 0; j < h; j += 1) {
+      r = 0; b = 0; g = 0;
+      for (let k=-1;k<1;k+=1){
+        c = img.get(i+k,j);
+        r = r+c[0]; g= g+c[1]; b=b+c[2];
+        }
+      farve = [r/3,g/3,b/3];
+      fill(farve);
       noStroke();
       rect(i, j, 1, 1);
-      cMinus = c;
     }
   }
 }

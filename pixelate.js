@@ -9,11 +9,11 @@ function setup(){
 }
 
 function draw(){
-image(img,275,0);
-pixelate();
+  image(img,275,0);
+  ownFilter();
 }
 
-function pixelate(){
+function ownFilter(){
   let pixelSize = map(mouseX , 0, width, 1, 16);
   for (let i=0;i<width; i = i+pixelSize){
     for (let j=0;j<height; j = j+pixelSize){
