@@ -3,6 +3,15 @@ Samling af js programmer til undervisningsbrug i billedmanipulation eller billed
 
 Filerne er lavet med js biblioteket P5.js.
 
+## opsætning af Atom liveserver
+Gå ind på:
+Præferencer -> install -> søg på 'atom-live-server' og enable den.
+CTRL+ALT+q -> quit liveserver
+CTRL+ALT+l -> aktiver liveserver
+
+
+
+# opgaver til nogle af programmerne
 
 ## colorFilterManuel
 fill((c[0]+c[1]+c[2])/3);
