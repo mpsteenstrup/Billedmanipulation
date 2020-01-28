@@ -19,18 +19,16 @@ function draw() {
 function ownFilter() {
   for (let i = 0; i < w; i = i+1) {
     for (let j = 0; j < h; j = j+1){
-      let c = img.get(i, j);
-      for (let k=0;k<3;k+=1){
-        if (c[k]>127){
-          c[k]=255;
-        }
-        else{
-          c[k]=0;
-        }
-      }
-      fill(c[0],c[1],c[2]);
+      fill(getRGBvalue(0,i,j),getRGBvalue(1,i,j),getRGBvalue(2,i,j));
       noStroke();
       rect(i, j, 1, 1);
     }
   }
+}
+
+function getRGBvalue(n,i,j){
+  c = img.get(i, j)[n];
+  if (c>127){c=255;}
+  else{c=0;}
+  return c;
 }
