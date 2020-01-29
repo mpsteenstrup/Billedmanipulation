@@ -4,7 +4,7 @@ let img;
 function setup() {
   createCanvas(400,400);
   input = createFileInput(handleFile);
-  input.position(0, 0);
+  input.position(200, 0);
 }
 
 function draw() {
@@ -15,7 +15,6 @@ function draw() {
 }
 
 function handleFile(file) {
-  print(file);
   if (file.type === 'image') {
     img = createImg(file.data,'');
     img.hide();
