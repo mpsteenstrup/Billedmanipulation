@@ -3,6 +3,12 @@ Samling af js programmer til undervisningsbrug i billedmanipulation eller billed
 
 Filerne er lavet med js biblioteket P5.js.
 
+# slides til undervisningen
+[Billedmanipulation1 slides](https://drive.google.com/open?id=1wM5pYU8eP08tujXp0M8mXqXdc9tLOkgLNUVAJqtBMC8)
+[Billedmanipulation2 slides](https://drive.google.com/open?id=1fPLhh2m5WEBlbgeCrJ2RMZLczG5zBS4olBct83mYDsc)
+[Billedmanipulation3 slides](https://drive.google.com/open?id=1BeQpWCXfe0y37lRzftKbN7Sgs3_KrUnRzLoD5M9uwK4)
+
+
 ## opsætning af Atom liveserver
 Gå ind på:
 
