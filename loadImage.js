@@ -14,8 +14,6 @@ function draw() {
   }
 }
 
-hvordan virker det?
-
 function handleFile(file) {
   print(file);
   if (file.type === 'image') {
