@@ -10,7 +10,7 @@ createCanvas(400,400);
 background(255, 0, 0);
 button = createButton('Save Image');
 button.position(19, 19);
-button.mousePressed(changeBG);
+button.mousePressed(SAVE);
 }
 
 function draw(){
@@ -18,6 +18,6 @@ function draw(){
   filter(POSTERIZE,3);
   noLoop();
 }
-function changeBG() {
+function SAVE() {
   saveCanvas('myCanvas', 'jpg');
 }
