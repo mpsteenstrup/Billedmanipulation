@@ -20,6 +20,30 @@ CTRL+ALT+q -> quit liveserver
 
 CTRL+ALT+l -> aktiver liveserver
 
+
+# Programoversigt
+## simple programmer til introduktion
+* `HelloWorld.js`
+* `simpleImageLoad.js`
+* `sortHvis.js`, brug af indbygget filter
+
+## Loade og genne billeder i programmet
+* `loadImage.js`
+* `saveImage.js`
+
+## forståelse af pixels, i,j
+* `loopIJColors.js`, 4x4 pixels
+* `getPixelValue.js`, pixelværd
+
+## manuelle filtre
+* `generalFilterSharpening.js`
+* `posterFilterManuel.js`
+* `blurFilterManuel.js`
+* `gradientFilterManuel.js`
+* `KantdetektionFilterManuel.js`
+* `pixelate.js`
+
+
 # opgaver til nogle af programmerne
 
 ## colorFilterManuel
