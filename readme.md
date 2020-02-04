@@ -11,7 +11,7 @@ Filerne er lavet med js biblioteket P5.js.
 [Billedmanipulation3 slides](https://drive.google.com/open?id=1BeQpWCXfe0y37lRzftKbN7Sgs3_KrUnRzLoD5M9uwK4)
 
 
-## opsætning af Atom liveserver
+## Opsætning af Atom liveserver
 Gå ind på:
 
 Præferencer -> install -> søg på 'atom-live-server' og enable den.

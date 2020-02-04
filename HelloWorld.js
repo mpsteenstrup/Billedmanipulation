@@ -1,4 +1,3 @@
-
 function setup() {
   createCanvas(400, 400);
 //  loadImage('mps.jpg', draw);
