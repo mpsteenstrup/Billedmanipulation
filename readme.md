@@ -10,6 +10,8 @@ Filerne er lavet med js biblioteket P5.js.
 
 [Billedmanipulation3 slides](https://drive.google.com/open?id=1BeQpWCXfe0y37lRzftKbN7Sgs3_KrUnRzLoD5M9uwK4)
 
+# Eksterne links
+[Verden første biograffilm, renset med neurale netværk](https://www.digg.com/2020/arrival-train-la-ciotat-upscaled?fbclid=IwAR3bCpLX0sIkNvhxPS7i8quwEmbEHXKBScwYMc5FR-L-sOh3lbNUwr_k4r0)
 
 ## Opsætning af Atom liveserver
 Gå ind på:
