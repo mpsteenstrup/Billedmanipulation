@@ -1,5 +1,5 @@
 # Billedbehandling med p5js
-Samling af js programmer til undervisningsbrug i billedmanipulation eller billedbehandling. Programmerne kan køres gennem `index.html` filen ved at henvise til den rigtige js fil.
+Samling af js programmer til undervisningsbrug i billedmanipulation, eller billedbehandling. Programmerne kan køres med live-server gennem `index.html` filen ved at henvise til den rigtige js fil.
 
 Filerne er lavet med js biblioteket P5.js.
 
