@@ -10,14 +10,13 @@ function setup() {
 function draw() {
   background(255);
   if (img) {
-    image(img, 0, 0, width, height);
+    image(img, 0, 0);
   }
 }
 
 function handleFile(file) {
   if (file.type === 'image') {
-    img = createImg(file.data,'');
-    img.hide();
+    img = loadImage(file.data);
   } else {
     img = null;
   }
