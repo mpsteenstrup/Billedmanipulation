@@ -27,7 +27,7 @@ Gå ind på:
 
 Præferencer -> install -> Teletype og enable den.
 
-Klik nederst på radiotårnet og følge linket til en token.
+Klik nederst på "radiotårnet" og følge linket til en token.
 
 Del filen med på "radiotårnet" og send link til de andre.
 
