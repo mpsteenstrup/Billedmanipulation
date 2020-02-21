@@ -10,7 +10,9 @@ function setup() {
 function draw() {
   background(255);
   if (img) {
-    image(img, 0, 0);
+    image(img, img.width/2, 0);
+    print(img.width);
+    noLoop();
   }
 }
 
