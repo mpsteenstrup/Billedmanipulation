@@ -11,6 +11,7 @@ function setup() {
 }
 
 function draw() {
+  img.loadPixels();
   ownFilter();
   image(img, w, 0);
   noLoop();
@@ -26,6 +27,13 @@ function ownFilter() {
 }
 
 function getRGBvalue(n,i,j){
-  c = img.get(i, j)[n];
+//  c = img.get(i, j)[n];
+  c = getPixelsOwn(n,i,j)
   return c;
+}
+
+function getPixelsOwn(n,i,j){
+
+  p = img.pixels[(i+w*j)*4+n];
+  return p;
 }
