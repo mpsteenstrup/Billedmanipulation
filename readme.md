@@ -42,7 +42,12 @@ Del filen med på "radiotårnet" og send link til de andre.
 I kan bruge Github til at køre jeres programmer online. Index.html filen skal indeholde reference til js filen og så skal den gøres tilgængelig.
 
 på Github skal I gå in i:
-Settings -> options -> Github pages. 
+index.html -> Settings -> options -> Github pages.
+
+Siden kan ses på
+`https://mpsteenstrup.github.io/Billedmanipulation/`
+
+ `https://username.github.io/repository/`
 
 # Programoversigt
 ## simple programmer til introduktion
