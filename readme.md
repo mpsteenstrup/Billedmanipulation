@@ -14,6 +14,8 @@ Filerne er lavet med js biblioteket P5.js.
 [Verden første biograffilm, renset med neurale netværk](https://www.digg.com/2020/arrival-train-la-ciotat-upscaled?fbclid=IwAR3bCpLX0sIkNvhxPS7i8quwEmbEHXKBScwYMc5FR-L-sOh3lbNUwr_k4r0)
 
 ## Opsætning af Atom liveserver
+For at kunne køre js programmerne lokalt, skal der oprettes en server. Det kan gøres gennem Atom med live-server installeret.
+
 Gå ind på:
 
 Præferencer -> install -> søg på 'atom-live-server' og enable den.
@@ -23,6 +25,10 @@ CTRL+ALT+q -> quit liveserver
 CTRL+ALT+l -> aktiver liveserver
 
 ## Opsætning af Teletype
+
+Hvis man vil samarbejde om samme dokument, kan man bruge Teletype. Efter en har delt sit dokument kan det gemmes og køres lokalt.
+
+
 Gå ind på:
 
 Præferencer -> install -> Teletype og enable den.
@@ -31,6 +37,12 @@ Klik nederst på "radiotårnet" og følge linket til en token.
 
 Del filen med på "radiotårnet" og send link til de andre.
 
+# Programmet online på Github
+
+I kan bruge Github til at køre jeres programmer online. Index.html filen skal indeholde reference til js filen og så skal den gøres tilgængelig.
+
+på Github skal I gå in i:
+Settings -> options -> Github pages. 
 
 # Programoversigt
 ## simple programmer til introduktion
@@ -45,7 +57,7 @@ Del filen med på "radiotårnet" og send link til de andre.
 ## forståelse af pixels, i,j
 * `loopIJColors.js`, 4x4 pixels
 * `getPixelValue.js`, pixelværd
-* `getPixelValueFast.js`, implementering af hurtig læsning af pixelværdier, ved brug af liste. 
+* `getPixelValueFast.js`, implementering af hurtig læsning af pixelværdier, ved brug af liste.
 
 ## manuelle filtre
 * `generalFilter.js`
