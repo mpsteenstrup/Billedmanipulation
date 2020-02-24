@@ -28,5 +28,12 @@ function ownFilter() {
 
 function getRGBvalue(n,i,j){
 //  c = img.get(i, j)[n];
+  c = getPixelsOwn(n,i,j)
   return c;
+}
+
+function getPixelsOwn(n,i,j){
+
+  p = img.pixels[(i+w*j)*4+n];
+  return p;
 }
