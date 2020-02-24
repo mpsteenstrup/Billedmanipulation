@@ -45,11 +45,13 @@ Del filen med på "radiotårnet" og send link til de andre.
 ## forståelse af pixels, i,j
 * `loopIJColors.js`, 4x4 pixels
 * `getPixelValue.js`, pixelværd
+* `getPixelValueFast.js`, implementering af hurtig læsning af pixelværdier, ved brug af liste. 
 
 ## manuelle filtre
+* `generalFilter.js`
 * `generalFilterSharpening.js`
-* `posterFilterManuel.js`
-* `blurFilterManuel.js`
+* `posterFilter.js`
+* `blurFilter.js`
 * `gradientFilter.js`
 * `KantdetektionFilterManuel.js`
 * `pixelate.js`
