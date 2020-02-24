@@ -50,7 +50,7 @@ Del filen med på "radiotårnet" og send link til de andre.
 * `generalFilterSharpening.js`
 * `posterFilterManuel.js`
 * `blurFilterManuel.js`
-* `gradientFilterManuel.js`
+* `gradientFilter.js`
 * `KantdetektionFilterManuel.js`
 * `pixelate.js`
 

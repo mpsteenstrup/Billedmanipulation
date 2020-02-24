@@ -4,10 +4,11 @@ function preload() {
 }
 
 function setup() {
-  w = 188;
-  h = 242;
+  w = img.width;
+  h = img.height;
   createCanvas(2 * w, h);
   noStroke();
+  img.loadPixels();
 }
 
 function draw() {
@@ -26,7 +27,13 @@ function ownFilter() {
 }
 
 function getRGBvalue(n,i,j){
-  c = 5*img.get(i, j)[n]-(img.get(i-1, j)[n]+img.get(i+1, j)[n]+
-  img.get(i, j-1)[n]+img.get(i, j+1)[n]);
+  c = 5*getPixelsOwn(n,i, j)-(getPixelsOwn(n,i-1, j)+getPixelsOwn(n,i+1, j)+
+  getPixelsOwn(n,i, j-1)+getPixelsOwn(n,i, j+1));
   return c;
+}
+
+
+function getPixelsOwn(n,i,j){
+  p = img.pixels[(i+w*j)*4+n];
+  return p;
 }

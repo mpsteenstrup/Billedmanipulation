@@ -5,14 +5,17 @@ function preload(){
 }
 
 function setup(){
-  w = 188;
-  h = 242;
+  w = img.width;
+  h = img.height;
   createCanvas(2*w,h);
+  noStroke();
+  img.loadPixels();
+
 }
 
 function draw(){
-ownFilter();
-image(img,w,0);
+  ownFilter();
+  image(img,w,0);
   noLoop();
 }
 
@@ -20,9 +23,14 @@ function ownFilter(){
   for (let i=0;i<w; i += 1){
     for (let j=0;j<h; j += 1){
       let c = img.get(i,j);
-      fill(c[1]-c[2]);
-      noStroke();
+      fill(getPixelValue(0,i,j)-getPixelValue(1,i,j));
       rect(i,j,1,1);
     }
   }
+}
+
+
+function getPixelValue(n,i,j){
+  p = img.pixels[(i+w*j)*4+n];
+  return p;
 }

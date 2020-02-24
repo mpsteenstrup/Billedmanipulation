@@ -5,22 +5,29 @@ function preload(){
 }
 
 function setup(){
-  createCanvas(275*2,387);
+  w = img.width;
+  h = img.height;
+  createCanvas(2 * w, h);
+  noStroke();
+  img.loadPixels();
 }
 
 function draw(){
-  image(img,275,0);
+  image(img,w,0);
   ownFilter();
 }
 
 function ownFilter(){
-  let pixelSize = map(mouseX , 0, width, 1, 16);
-  for (let i=0;i<width; i = i+pixelSize){
-    for (let j=0;j<height; j = j+pixelSize){
-      let c = img.get(i,j);
-      fill(c);
-      noStroke();
+  let pixelSize = int(map(mouseX , 0, 2*w, 2, 16));
+  for (let i=0;i<w; i = i+pixelSize){
+    for (let j=0;j<h; j = j+pixelSize){
+      fill([getPixelValue(0,i,j),  getPixelValue(1,i,j),  getPixelValue(2,i,j)]);
       ellipse(i,j,pixelSize,pixelSize);
     }
   }
+}
+
+function getPixelValue(n,i,j){
+  p = img.pixels[(i+w*j)*4+n];
+  return p;
 }

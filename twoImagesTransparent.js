@@ -1,20 +1,21 @@
-let img1;
+let img;
 let img2
-w = 188;
-h = 242;
 
 function preload() {
-  img1 = loadImage("mps.jpg");
+  img = loadImage("mps.jpg");
   img2 = loadImage("mpsFull.jpg");
 }
 
 function setup() {
-  createCanvas(275, 387);
-  image(img2, 0,0,275,387);
+  w = img.width;
+  h = img.height;
+  createCanvas(2 * w, h);
+  noStroke();
+  img.loadPixels();
+  image(img2, 0,0);
 }
 
 function draw(){
-  noStroke();
   ownFilter();
   noLoop();
 }
@@ -22,13 +23,14 @@ function draw(){
 function ownFilter() {
   for (let i = 0; i < w; i += 1) {
     for (let j = 0; j < h; j += 1) {
-      fill([getRGBvalue(0,i,j),  getRGBvalue(1,i,j),  getRGBvalue(2,i,j), getRGBvalue(3,i,j)*0.5]);
+      fill([getPixelValue(0,i,j),  getPixelValue(1,i,j),  getPixelValue(2,i,j),200]);
       rect(i, j, 1, 1);
     }
   }
 }
 
-function getRGBvalue(n,i,j){
-  c = img1.get(i, j)[n];
-  return c;
+
+function getPixelValue(n,i,j){
+  p = img.pixels[(i+w*j)*4+n];
+  return p;
 }

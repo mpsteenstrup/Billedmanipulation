@@ -8,10 +8,11 @@ function setup() {
   h = img.height;
   createCanvas(2 * w, h);
   noStroke();
+  img.loadPixels();
 }
 
 function draw() {
-  img.loadPixels();
+
   ownFilter();
   image(img, w, 0);
   noLoop();

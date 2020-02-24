@@ -5,8 +5,8 @@ function preload() {
 }
 
 function setup() {
-  w = 188;
-  h = 242;
+  w = img.width;
+  h = img.height;
   createCanvas(2 * w, h);
 }
 
