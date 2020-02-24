@@ -27,6 +27,6 @@ function ownFilter() {
 }
 
 function getRGBvalue(n,i,j){
-//  c = img.get(i, j)[n];
+  c = img.get(i, j)[n];
   return c;
 }
