@@ -36,8 +36,3 @@ function getPixelValue(n,i,j){
   p = img.pixels[(i+w*j)*4+n];
   return p;
 }
-
-
-function mouseClicked() {
-  createA('http://p5js.org/', 'this is a link');
-}
