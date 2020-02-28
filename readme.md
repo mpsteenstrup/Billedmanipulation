@@ -1,11 +1,6 @@
 # Billedbehandling med p5js
 Samling af js programmer til undervisningsbrug i billedmanipulation, eller billedbehandling. Programmerne kan køres med live-server gennem `index.html` filen ved at henvise til den rigtige js fil.
 
-test af matematik
-
-$$\pi = 3.14 $$
-
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 Filerne er lavet med js biblioteket P5.js.
 
 # slides til undervisningen
