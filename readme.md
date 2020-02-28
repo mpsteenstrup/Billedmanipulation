@@ -44,9 +44,10 @@ I kan bruge Github til at køre jeres programmer online. Index.html filen skal i
 på Github skal I gå in i:
 index.html -> Settings -> options -> Github pages.
 
-Siden kan ses på
+Denne siden kan ses på
 `https://mpsteenstrup.github.io/Billedmanipulation/`
 
+Indsæt selv brugernavn og repository
  `https://username.github.io/repository/`
 
 # Programoversigt
