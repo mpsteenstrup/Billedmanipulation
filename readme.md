@@ -5,6 +5,7 @@ test af matematik
 
 $$\pi = 3.14 $$
 
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 Filerne er lavet med js biblioteket P5.js.
 
 # slides til undervisningen
