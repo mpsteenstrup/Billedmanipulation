@@ -20,20 +20,20 @@ function draw() {
 function ownFilter() {
   for (let i = 0; i < w; i += 1) {
     for (let j = 0; j < h; j += 1) {
-      fill([getRGBvalue(0,i,j),  getRGBvalue(1,i,j),  getRGBvalue(2,i,j)]);
+      fill([theFilter(0,i,j),  theFilter(1,i,j),  theFilter(2,i,j)]);
       rect(i, j, 1, 1);
     }
   }
 }
 
-function getRGBvalue(n,i,j){
-  c = 5*getPixelsOwn(n,i, j)-(getPixelsOwn(n,i-1, j)+getPixelsOwn(n,i+1, j)+
-  getPixelsOwn(n,i, j-1)+getPixelsOwn(n,i, j+1));
+function theFilter(n,i,j){
+  c = 5*getPixelValue(n,i, j)-(getPixelValue(n,i-1, j)+getPixelValue(n,i+1, j)+
+  getPixelValue(n,i, j-1)+getPixelValue(n,i, j+1));
   return c;
 }
 
 
-function getPixelsOwn(n,i,j){
+function getPixelValue(n,i,j){
   p = img.pixels[(i+w*j)*4+n];
   return p;
 }
