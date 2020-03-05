@@ -27,6 +27,11 @@ function ownFilter() {
   }
 }
 
+function theFilter(n,i,j){
+  c =  getPixelValue(0,i,j);
+  return c;
+}
+
 function getPixelValue(n,i,j){
   p = img.pixels[(i+w*j)*4+n];
   return p;
