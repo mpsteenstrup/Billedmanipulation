@@ -74,6 +74,9 @@ Indsæt selv brugernavn og repository
 * `KantdetektionFilterManuel.js`
 * `pixelate.js`
 
+## flere filtre hvor man opdaterer pixelværdierne under vejs
+* 'filterSaveUpdatePixelValues.js'
+
 
 # opgaver til nogle af programmerne
 
