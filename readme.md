@@ -75,7 +75,7 @@ Indsæt selv brugernavn og repository
 * `pixelate.js`
 
 ## flere filtre hvor man opdaterer pixelværdierne under vejs
-* 'filterSaveUpdatePixelValues.js'
+* `filterSaveUpdatePixelValues.js`
 
 
 # opgaver til nogle af programmerne
