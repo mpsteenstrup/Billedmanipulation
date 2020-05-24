@@ -9,7 +9,7 @@ let img;
 let valg = 0;
 let valg2 = 0;
 function preload() {
-  img = loadImage('mpsFull.jpg');
+  img = loadImage('billeder/mpsFull.jpg');
 }
 
 function setup() {

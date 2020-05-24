@@ -1,7 +1,7 @@
 let img;
 
 function preload() {
-  img = loadImage('mps.jpg');
+  img = loadImage('billeder/mps.jpg');
 }
 
 function setup() {

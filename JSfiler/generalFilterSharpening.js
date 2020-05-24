@@ -1,6 +1,6 @@
 let img;
 function preload() {
-  img = loadImage('mpsFull.jpg');
+  img = loadImage('billeder/mps.jpg');
 }
 
 function setup() {
@@ -20,14 +20,15 @@ function draw() {
 function ownFilter() {
   for (let i = 0; i < w; i += 1) {
     for (let j = 0; j < h; j += 1) {
-      fill([getPixelValue(0,i,j),  getPixelValue(1,i,j),  getPixelValue(2,i,j)]);
+      fill([theFilter(0,i,j),  theFilter(1,i,j),  theFilter(2,i,j)]);
       rect(i, j, 1, 1);
     }
   }
 }
 
 function theFilter(n,i,j){
-  c =  getPixelValue(0,i,j);
+  c = 5*getPixelValue(n,i, j)-(getPixelValue(n,i-1, j)+getPixelValue(n,i+1, j)+
+  getPixelValue(n,i, j-1)+getPixelValue(n,i, j+1));
   return c;
 }
 

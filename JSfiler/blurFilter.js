@@ -1,7 +1,7 @@
 let img;
 let farve = [0,0,0];
 function preload() {
-  img = loadImage('mps.jpg');
+  img = loadImage('billeder/mps.jpg');
 }
 
 function setup() {

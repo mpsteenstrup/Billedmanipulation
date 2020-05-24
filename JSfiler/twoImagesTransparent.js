@@ -2,8 +2,8 @@ let img;
 let img2
 
 function preload() {
-  img = loadImage("mps.jpg");
-  img2 = loadImage("mpsFull.jpg");
+  img = loadImage("billeder/mps.jpg");
+  img2 = loadImage("billeder/mpsFull.jpg");
 }
 
 function setup() {

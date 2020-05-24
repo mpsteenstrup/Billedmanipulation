@@ -1,7 +1,7 @@
 let img;
 
 function preload() {
-  img = loadImage('mpsFullGrayscale.jpg');
+  img = loadImage('billeder/mpsFullGrayscale.jpg');
 }
 
 function setup() {
