@@ -45,7 +45,7 @@ på Github skal I gå in i:
 index.html -> Settings -> options -> Github pages.
 
 Denne siden kan ses på
-`https://mpsteenstrup.github.io/Billedmanipulation/`
+[https://mpsteenstrup.github.io/Billedmanipulation/](https://mpsteenstrup.github.io/Billedmanipulation/)
 
 Indsæt selv brugernavn og repository
  `https://username.github.io/repository/`
