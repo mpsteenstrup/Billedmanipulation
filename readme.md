@@ -13,6 +13,29 @@ Filerne er lavet med js biblioteket P5.js.
 # Eksterne links
 [Verden første biograffilm, renset med neurale netværk](https://www.digg.com/2020/arrival-train-la-ciotat-upscaled?fbclid=IwAR3bCpLX0sIkNvhxPS7i8quwEmbEHXKBScwYMc5FR-L-sOh3lbNUwr_k4r0)
 
+
+# JS fil gennem index.html
+Vi bruger biblioteket p5.js, og kører vores js fil gennem en html side. Nedenunder er index filen som også ligger på github siden. 
+```
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js example</title>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+    <script src="JSfiler/generalFilterSharpening.js"></script>
+  </head>
+</html>
+```
+De to vigtige linher er,
+```<script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script> ```, hvor p5.js biblioteket indlæses og
+```     <script src="JSfiler/generalFilterSharpening.js"></script> ```, hvor js filen ```generalFilterSharpening.js```indlæses.
+
+
+
+
 ## Opsætning af Atom liveserver
 For at kunne køre js programmerne lokalt, skal der oprettes en server. Det kan gøres gennem Atom med live-server installeret.
 
