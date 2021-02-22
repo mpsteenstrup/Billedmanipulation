@@ -15,7 +15,7 @@ Filerne er lavet med js biblioteket P5.js.
 
 
 # JS fil gennem index.html
-Vi bruger biblioteket p5.js, og kører vores js fil gennem en html side. Nedenunder er index filen som også ligger på github siden. 
+Vi bruger biblioteket p5.js, og kører vores js fil gennem en html side. Nedenunder er index filen som også ligger på github siden.
 ```
 <!DOCTYPE html>
 <html lang="">
@@ -34,7 +34,10 @@ De to vigtige linher er,
 ```     <script src="JSfiler/generalFilterSharpening.js"></script> ```, hvor js filen ```generalFilterSharpening.js```indlæses.
 
 
-
+## Øvelse
+* Download JSfiler folderen og åben den som projekt i Atom.
+* Ret ```<script src="JSfiler/generalFilterSharpening.js"></script> ``` så det er ```HelloWorld.js``` filen som bruges.
+* Brug Atom liveserver til at se resultatet, det virker vist ikke med Prewiew HTML.
 
 ## Opsætning af Atom liveserver
 For at kunne køre js programmerne lokalt, skal der oprettes en server. Det kan gøres gennem Atom med live-server installeret.
