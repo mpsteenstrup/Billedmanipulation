@@ -29,7 +29,7 @@ Vi bruger biblioteket p5.js, og kører vores js fil gennem en html side. Nedenun
   </head>
 </html>
 ```
-De to vigtige linher er,
+De to vigtige linjer er,
 ```<script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script> ```, hvor p5.js biblioteket indlæses og
 ```     <script src="JSfiler/generalFilterSharpening.js"></script> ```, hvor js filen ```generalFilterSharpening.js```indlæses.
 
