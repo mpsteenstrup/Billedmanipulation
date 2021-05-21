@@ -131,3 +131,6 @@ Generelle regler for foldning.
 Hvis samme fortegn giver det en udglatning
 
 Hvis modsat fotegn giver det en tydeligere kant.
+
+## Hvorfor blur filtre ofte er forkerte
+her er en lille video som forklare det, (https://www.youtube.com/watch?v=LKnqECcg6Gw)[https://www.youtube.com/watch?v=LKnqECcg6Gw].
