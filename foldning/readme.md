@@ -5,8 +5,6 @@ mathfont: verdana.ttf
 # Foldning
 Mads Peter Steenstrup, 10. marts 2024
 
-
-
 ## Grundlæggende Koncept
 
 Foldning er en matematisk metode til at kombinere to signaler for at danne et tredje signal. Det er en matematisk operation, der kombinerer to funktioner eller signaler for at producere et tredje. På engelsk hedder det convolution. Foldning har mange anvendelsesmuligheder inden for statistik, signalbehandling og billedbehandling. 
