@@ -1,6 +1,3 @@
----
-mathfont: verdana.ttf
----
 
 # Foldning
 Mads Peter Steenstrup, 10. marts 2024
