@@ -2,6 +2,7 @@ let img;
 
 function preload(){
   img = loadImage('billeder/mps.jpg');
+
 }
 
 function setup(){
@@ -9,6 +10,7 @@ function setup(){
   h = img.height;
   createCanvas(2*w,h);
   noStroke();
+  pixelDensity(10);
   img.loadPixels();
 
 }
