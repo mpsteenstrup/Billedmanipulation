@@ -1,3 +1,6 @@
+---
+mathfont: verdana.ttf
+---
 
 # Foldning
 Mads Peter Steenstrup, 10. marts 2024
@@ -9,17 +12,9 @@ Foldning er en matematisk metode til at kombinere to signaler for at danne et tr
 **Intuition:**
 Foldning viser hvor meget overlap to funktioner har når man kører den ene over den anden. I figur 1 bliver det lilla rektangel kørt forbi den store røde. Overlappet vises som den grønne graf. Hvis hele det lille er inde i det røde er der maksimalt overlap, mens det er nul hvis de slet ikke overlapper. På den grønne kurve kan man se at den overlappere mere og mere ind til maksimum. Det vises bedst som en gif, se her [Wolfram Mathworld](https://mathworld.wolfram.com/images/gifs/convrect.gif). 
 
-![Foldning, Wolfram Mathworld [LINK](https://mathworld.wolfram.com/Convolution.html)](billeder/convolution1.png)
+![Foldning, Wolfram Mathworld [LINK](https://mathworld.wolfram.com/Convolution.html) \label{mylabel}](billeder/convolution1.png)
 
-
-
-
-.
-
-
-foldning betegnes . Hvis $f$ og $g$ er to funktioner, skrives deres foldning som $f * g$.
-
-
+Hvis $f$ og $g$ er to funktioner, skrives deres foldning som $f * g$.
 
 
 
@@ -42,6 +37,8 @@ Der gælder samme regler for foldning som for addition, multiplikation og divisi
 * Distributiv.
 * Associativ.
 * Kommutativ.
+
+
 
 ### Distributiv egenskab
 Den distributive egenskab ved multiplikation siger at $x \cdot (a+b) = x \cdot a + x \cdot b$. For en foldning vil det sige at $(f*(g+h))(t) = (f*g + f*h)(t)$.
@@ -121,7 +118,8 @@ $$
 $$
 
 ### Eksempel
-Funktionen $f(x) = \cos(\frac{2\pi}{10}x) + \frac{1}{3}\cos(2\pi x)$ indeholder to cosinusfunktioner med en periode på $T=10$ og  $T=1$ og en amplitude på $A=1$ og $A=\frac{1}{3}$. Den langsomme bevægelse kan findes ved et glidende gennemsnit, hvilket ses i figur 2 som den blå graf. 
+Funktionen $f(x) = \cos(\frac{2\pi}{10}x) + \frac{1}{3}\cos(2\pi x)$ indeholder to cosinusfunktioner med en periode på $T=10$ og  $T=1$ og en amplitude på $A=1$ og $A=\frac{1}{3}$. Den langsomme bevægelse kan findes ved et glidende gennemsnit, hvilket ses i figur 2 som den blå graf.
+
 ![Gliden gennemsnit](billeder/glidendeGennemsnit.png)
 
 
@@ -163,7 +161,7 @@ Figur 3 viser tre gauss-funktioner centreret om $\mu=0$ med forekellig spredning
 Figur 4 viser et sort-hvidt billed og en repræsentation som en sinus funktion, hvor høj værdi giver hvis mens lav giver sort. Det er ikke helt korrekt at bruge en kontinuert funktion til at beskrive det sort-hvide billed, men det gør det matematisk lettere at arbejde med.
 
 ![Sort hvid billede](billeder/gauss2.png)
-Figur 4.
+
 
 ### Blure filter
 Vi laver en foldning mellem firkant-funktionen og gauss-funktionen,
@@ -185,7 +183,7 @@ Dette integral løses med computer og giver den røde graf i figur 4.
 Gængse billedbehandlingsprogrammer eks. open source programmet Gimp kan foretage et gaussisk-blur. I figur 5 er grafen lavet med $\sigma=1$ og blur-filtret er sat til 10 pixels standardafvigelse. Det kan ikke direkte sammenlignes med standardafvigelsen og pixelantal da vi regner i andre enheder.
 
 ![Sort hvid sløret](billeder/gauss5.png)
-figur 5.
+
 
 Som det ses bliver firkant-funktionen blødere af den gaussiske foldning, hvilket netop giver de udviskede kanter på billedet.
 
@@ -231,6 +229,7 @@ $$
 (f*g) = \frac{1}{M}\sum_0^{M} f\cdot g = \frac{1}{M}(x_1+x_2+..+x_M). 
 $$
 Figur 6 viser sinusfunktionen og et eksempel på 11 målinger, de røde.
+
 ![Sinus](billeder/sin_diskret.png)
 
 
@@ -252,6 +251,7 @@ $$
 Ved denne version af et glidende gennemsnit reduceres antallet af datapunkter med $M$.
 
 Nedenfor ses sammen sinuskurve med et glidende gennemsnit hvor $M=3$
+
 ![Diskret glidenden gennemsnit](billeder/sin_diskret_moving_average.png)
 
 ## Øvelse
@@ -270,6 +270,7 @@ De fleste matematikprogrammer kan lave glidende gennemsnit, moving average på e
 
 ## Diskret foldning og billedbehandling
 Billedet, vi lavede en gauss-foldning på, figur 4 kan også skrives som diskrete værdier hvor $g = [-1,1,-1,1,-1,...]$, hvor $-1$ svarer til sort og $1$ hvid og $g$ er $N$ lang.
+
 ![Sort hvid](billeder/gauss2.png)
 
 Hvis vi gerne vil gøre billedet mere sløret kan vi eks. lave en foldning med $f=[0.1,0.8,0.1]$, hvor vi lader hver pixel være et vægtet gennemsnit af sig selv og naboernes værdier.
@@ -314,7 +315,7 @@ Billeder kan beskrives med $x$ og $y$ koordinater og her definerer man en $N x M
 $$
 (f*g)[x,y] = \sum_{i=-[N/2]}^{[N/2]}\sum_{i=-[M/2]}^{[M/2]}f(x-i,y-j)\cdot g(i,j)
 $$
-Figur xx viser en animation af processen, kan findes her, [wikipedia convolution](https://upload.wikimedia.org/wikipedia/commons/1/19/2D_Convolution_Animation.gif). Her er vægtmatrricen
+Figuren viser en animation af processen, kan findes her, [wikipedia convolution](https://upload.wikimedia.org/wikipedia/commons/1/19/2D_Convolution_Animation.gif). Her er vægtmatrricen
 $$
 w = \left[\begin{array}{ccc}
 0 & -1 & 0 
