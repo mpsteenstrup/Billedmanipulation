@@ -281,11 +281,18 @@ $$
 $$
 skrevet ud bliver det. 
 $$
-(f*g)[2] = 0.1*(-1)+0.8*1+0.1*(-1) = 0.6 \newline
-(f*g)[3] = 0.1*1+0.8*(-1)+0.1*1 = -0.6 \newline
-(f*g)[4] = 0.1*(-1)+0.8*1+0.1*(-1) = 0.6 \newline
-...
+(f*g)[2] = 0.1\cdot (-1)+0.8\cdot 1+0.1\cdot (-1) = 0.6 
 $$
+
+$$
+(f*g)[3] = 0.1\cdot 1+0.8\cdot (-1)+0.1\cdot 1 = -0.6 
+$$
+
+$$
+(f*g)[4] = 0.1\cdot (-1)+0.8\cdot 1+0.1\cdot (-1) = 0.6 
+$$
+
+
 Vores output at foldningen bliver listen, $G=[0.6,-0.6,0.6,-0.6,...]$. I forhold til $g=[-1,1,-1,1,...]$ er kontrasten mindre.
 
 ### Øvelse
