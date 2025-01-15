@@ -23,6 +23,7 @@ I skal derfor udvikle et program, der
  
 I den forbindelse skal I have fokus på brugeren hvor I skal
 * Bestemme hvad der er kerne- og sekundære-faciliteter.
+* Udføre en brugertest og en tilretning af projektet.
 
 I logbogen skal I dokumentere arbejdsprocessen og produktet undervejs.
 
@@ -53,25 +54,13 @@ De to vigtige linjer er,
 
 
 ## Øvelse
-* Download JSfiler folderen og åben den som projekt i Atom.
+* Download JSfiler folderen og åben den som projekt VS-Code.
 * Ret ```<script src="JSfiler/generalFilterSharpening.js"></script> ``` så det er ```HelloWorld.js``` filen som bruges.
-* Brug Atom liveserver til at se resultatet, det virker vist ikke med Prewiew HTML.
-
-## Opsætning af Atom liveserver
-For at kunne køre js programmerne lokalt, skal der oprettes en server. Det kan gøres gennem Atom med live-server installeret.
-
-Gå ind på:
-
-Præferencer -> install -> søg på 'atom-live-server' og enable den.
-
-CTRL+ALT+q -> quit liveserver
-
-CTRL+ALT+l -> aktiver liveserver
+* Brug liveserver til at se resultatet, det virker vist ikke med Prewiew HTML.
 
 ## Opsætning af Teletype
 
 Hvis man vil samarbejde om samme dokument, kan man bruge Teletype. Efter en har delt sit dokument kan det gemmes og køres lokalt.
-
 
 Gå ind på:
 
@@ -120,7 +109,6 @@ Indsæt selv brugernavn og repository
 
 ## flere filtre hvor man opdaterer pixelværdierne under vejs
 * `filterSaveUpdatePixelValues.js`
-
 
 # opgaver til nogle af programmerne
 
