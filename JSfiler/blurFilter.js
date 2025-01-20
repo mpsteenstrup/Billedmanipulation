@@ -8,6 +8,7 @@ function setup() {
   w = img.width;
   h = img.height;
   createCanvas(2 * w, h);
+  img.loadPixels();
 }
 
 function draw() {
@@ -19,12 +20,17 @@ function draw() {
 function ownFilter() {
   for (let i = 0; i < w; i += 1) {
     for (let j = 0; j < h; j += 1) {
-      r = img.get(i,j)[0]+img.get(i-1,j)[0]+img.get(i+1,j)[0]
-      g = img.get(i,j)[1]+img.get(i-1,j)[1]+img.get(i+1,j)[1]
-      b = img.get(i,j)[2]+img.get(i-1,j)[2]+img.get(i+1,j)[2]
+      r = getPixelsValue(0,i,j)+getPixelsValue(0,i-1,j)+getPixelsValue(0,i+1,j)
+      g = getPixelsValue(1,i,j)+getPixelsValue(1,i-1,j)+getPixelsValue(1,i+1,j)
+      b = getPixelsValue(2,i,j)+getPixelsValue(2,i-1,j)+getPixelsValue(2,i+1,j)
       fill([r/3,g/3,b/3]);
       noStroke();
       rect(i, j, 1, 1);
     }
   }
+}
+
+function getPixelsValue(n,i,j){
+  p = img.pixels[(i+w*j)*4+n];
+  return p;
 }

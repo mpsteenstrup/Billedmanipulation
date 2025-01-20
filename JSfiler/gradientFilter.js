@@ -22,14 +22,14 @@ function ownFilter(){
   for (let i=0;i<w; i += 1){
     for (let j=0;j<h; j += 1){
       let c = img.get(i,j);
-      fill((getPixelsOwn(0,i,j)+getPixelsOwn(1,i,j)+getPixelsOwn(2,i,j))/3-j);
+      fill((getPixelsValue(0,i,j)+getPixelsValue(1,i,j)+getPixelsValue(2,i,j))/3-j);
       rect(i,j,1,1);
     }
   }
 }
 
 
-function getPixelsOwn(n,i,j){
+function getPixelsValue(n,i,j){
   p = img.pixels[(i+w*j)*4+n];
   return p;
 }

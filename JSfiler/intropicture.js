@@ -19,7 +19,7 @@ function draw(){
   rect(700,100,800,300);
   fill(0);
   textSize(24);
-  text('Billedmananipulation - et emne i informatik Rysensteen 2020 \nFiler og program findes på \nhttps://github.com/mpsteenstrup/Billedmanipulation ',750,200);
+  text('Billedmananipulation - et emne i informatik Rysensteen 2025 \nFiler og program findes på \nhttps://github.com/mpsteenstrup/Billedmanipulation ',750,200);
 }
 
 function ownFilter(){

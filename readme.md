@@ -112,12 +112,17 @@ Indsæt selv brugernavn og repository
 
 # opgaver til nogle af programmerne
 
-## colorFilterManuel
-fill((c[0]+c[1]+c[2])/3);
+## colorFilte
+´´´getPixelValue(0,i,j)´´´ giver en talværdi for den røde farve i pixel (i,j)
+´´´fill()´´´ indsættes værdierne
 
-* undersøg hvad c indeholder
-* undersøg hvordan billedet ser ud med c[i], i=0,1,2
-* Hvordan laver man et farvefilter?
+* Skru ned for den røde farve ved at gange getPixelValue(0,i,j) med et tal mellen 0-1.
+* Prøv at fjerne nogen af farverne ved at gange med nul.
+
+Hvis man giver ´´´fill()´´´ et tal i stedet for tal bliver farven gråtoneskala. 
+
+* Lav et billede kun med den røde farve som gråtone.
+* Man kan også trække værdier fra hinanden prøv med getPixelValue(0,i,j)-getPixelValue(1,i,j), altså værdien af den røde farve minus værdien af den grønne farve. 
 
 ## Gradient farvefilter
 fill((c[0]+c[1]+c[2])/(3)-j);

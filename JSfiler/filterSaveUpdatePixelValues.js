@@ -1,4 +1,3 @@
-
 // sætter img på canvas med set()
 // loader pixels fra canvas
 // ownFilter opdaterer nu pixelværdierne direkte

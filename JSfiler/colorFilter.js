@@ -25,7 +25,7 @@ function ownFilter(){
   for (let i=0;i<w; i += 1){
     for (let j=0;j<h; j += 1){
       let c = img.get(i,j);
-      fill(getPixelValue(0,i,j)-getPixelValue(1,i,j));
+      fill(getPixelValue(0,i,j),getPixelValue(1,i,j),getPixelValue(2,i,j));
       rect(i,j,1,1);
     }
   }
