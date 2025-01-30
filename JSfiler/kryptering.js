@@ -41,6 +41,8 @@ function draw() {
   image(encryptedImg, 2*img.width, 0); // Krypteret billede
   image(decryptedImg, 3* img.width, 0); // Dekrypteret billede
 
+  encryptedImg.save('encrypted_image', 'png');
+
   noLoop();
 }
 

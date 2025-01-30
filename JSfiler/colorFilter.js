@@ -15,7 +15,6 @@ function setup(){
 
 }
 
-Hej Mads
 function draw(){
   ownFilter();
   image(img,w,0);
