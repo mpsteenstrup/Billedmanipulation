@@ -48,16 +48,16 @@ function draw() {
 
 function encryptPixel(imgColor, keyColor) {
   return color(
-    (red(imgColor) + red(keyColor)) % 255,
-    (green(imgColor) + green(keyColor)) % 255,
-    (blue(imgColor) + blue(keyColor)) % 255
+    (red(imgColor) + red(keyColor)) % 266,
+    (green(imgColor) + green(keyColor)) % 266,
+    (blue(imgColor) + blue(keyColor)) % 266
   );
 }
 
 function decryptPixel(encryptedColor, keyColor) {
   return color(
-    (red(encryptedColor) - red(keyColor) + 255) % 255,
-    (green(encryptedColor) - green(keyColor) + 255) % 255,
-    (blue(encryptedColor) - blue(keyColor) + 255) % 255
+    (red(encryptedColor) - red(keyColor) + 266) % 266,
+    (green(encryptedColor) - green(keyColor) + 266) % 266,
+    (blue(encryptedColor) - blue(keyColor) + 266) % 266
   );
 }
